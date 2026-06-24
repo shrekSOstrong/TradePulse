@@ -10,7 +10,7 @@ const MULT = {
   ride: 1.15
 };
 
-const CATEGORIES = ["All", "Pet", "Egg", "Vehicle", "Stroller", "Toy", "Food", "Gnome", "Other"];
+const CATEGORIES = ["All", "Pet", "Egg", "Vehicle", "Stroller", "Toy", "Food"];
 const RARITIES = ["Legendary", "Ultra-Rare", "Rare", "Uncommon", "Common"];
 const RARITY_COLOR = {
   "Legendary": "var(--rarity-legendary)",
@@ -264,21 +264,26 @@ function updateVerdict(){
     return;
   }
 
+  // diff > 0 means YOUR side is worth more than theirs, which means
+  // YOU are giving away more value than you receive — i.e. you are
+  // LOSING the trade. diff < 0 means their side is worth more, so you
+  // receive more than you give — you are WINNING. "Fair" now requires
+  // the two sides to match exactly, not just be close.
   const diff = left - right;
   const base = Math.max(left, right, 0.0001);
   const pct = Math.abs(diff) / base * 100;
 
-  if (pct < 5){
+  if (diff === 0){
     label.textContent = "Fair trade";
-    sub.textContent = `Within ${pct.toFixed(1)}% — both sides are close in value`;
+    sub.textContent = "Both sides are worth exactly the same";
     root.style.setProperty("--pulse-color", "var(--pulse-teal)");
-  } else if (diff > 0){
+  } else if (diff < 0){
     label.textContent = "You're winning";
-    sub.textContent = `Your offer is ${pct.toFixed(1)}% higher in value`;
+    sub.textContent = `Their offer is worth ${pct.toFixed(1)}% more than yours`;
     root.style.setProperty("--pulse-color", "var(--pulse-teal)");
   } else {
     label.textContent = "You're losing";
-    sub.textContent = `Their offer is ${pct.toFixed(1)}% higher in value`;
+    sub.textContent = `Your offer is worth ${pct.toFixed(1)}% more than theirs`;
     root.style.setProperty("--pulse-color", "var(--warn-rose)");
   }
 }
