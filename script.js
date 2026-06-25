@@ -10,7 +10,7 @@ const MULT = {
   ride: 1.15
 };
 
-const CATEGORIES = ["All", "Pet", "Egg", "Vehicle", "Stroller", "Toy", "Food"];
+const CATEGORIES = ["All", "Pet", "Egg", "Vehicle", "Stroller", "Toy", "Food", "Gift", "Pet Wear"];
 const RARITIES = ["Legendary", "Ultra-Rare", "Rare", "Uncommon", "Common"];
 const RARITY_COLOR = {
   "Legendary": "var(--rarity-legendary)",
@@ -75,7 +75,10 @@ function buildChips(){
 
   const rarWrap = document.getElementById("rarityChips");
   rarWrap.innerHTML = "";
-  if (state.category === "Pet" || state.category === "All"){
+  const categoryHasRarity = ITEMS.some(i =>
+    (state.category === "All" || i.category === state.category) && i.rarity
+  );
+  if (categoryHasRarity){
     RARITIES.forEach(r => {
       const b = document.createElement("button");
       b.className = "chip" + (state.rarity === r ? " active" : "");
