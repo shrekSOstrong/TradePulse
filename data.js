@@ -1,20 +1,21 @@
-// TradePulse item database (v2)
-// Pet, egg, and vehicle names verified against the Adopt Me! Wiki
-// (adoptme.fandom.com) Pets/Eggs/Vehicles pages and the WikiLists
-// "List of Adopt Me! Pets" page -- no invented pet names.
+// TradePulse item database (v3)
+// Pet, egg, vehicle, gift, toy, and pet-wear names verified against the
+// Adopt Me! Wiki (adoptme.fandom.com), the WikiLists "List of Adopt Me!
+// Pets" page, and recent playadopt.me patch notes. No invented names.
 //
 // Within each pet rarity tier, most pets start at the SAME baseline
-// value (a small number of well-known standouts -- Shadow Dragon,
-// Bat Dragon, Blue Dog, etc. -- are bumped higher). Real Adopt Me
-// trade values are community-driven and shift daily; nobody, including
-// the big value-list sites, has a perfectly authoritative number for
-// all ~290 items below. Treat these as an editable starting point.
+// value (a small number of well-known standouts are bumped higher).
+// Real Adopt Me trade values are community-driven and shift daily --
+// treat these as an editable starting point, not a live feed.
 //
 // Pet values are BASE values (Normal, no potions). The Neon / Mega
 // Neon / Fly / Ride toggles in the app compute the variant value live.
 //
-// Want to fix a value or add an item? Edit the object below directly,
-// or edit gen_data2.py and regenerate.
+// This is a large, actively-curated subset of Adopt Me content, NOT a
+// claim of 100%% literal completeness -- the game has 7+ years of
+// pets/wings/hats/houses/stickers/vehicle skins, far more than any
+// single hand-built list can guarantee exhaustively. Add more below
+// any time you spot something missing.
 const ITEMS = [
   {
     "id": 1,
@@ -882,6 +883,18 @@ const ITEMS = [
   },
   {
     "id": 73,
+    "name": "Birthday Butterfly",
+    "category": "Pet",
+    "rarity": "Uncommon",
+    "value": 3,
+    "demand": 1,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 74,
     "name": "Beaver",
     "category": "Pet",
     "rarity": "Rare",
@@ -893,7 +906,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 74,
+    "id": 75,
     "name": "Rabbit",
     "category": "Pet",
     "rarity": "Rare",
@@ -905,7 +918,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 75,
+    "id": 76,
     "name": "Elephant",
     "category": "Pet",
     "rarity": "Rare",
@@ -917,7 +930,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 76,
+    "id": 77,
     "name": "Hyena",
     "category": "Pet",
     "rarity": "Rare",
@@ -929,7 +942,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 77,
+    "id": 78,
     "name": "Bunny",
     "category": "Pet",
     "rarity": "Rare",
@@ -941,7 +954,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 78,
+    "id": 79,
     "name": "Snow Puma",
     "category": "Pet",
     "rarity": "Rare",
@@ -953,7 +966,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 79,
+    "id": 80,
     "name": "Brown Bear",
     "category": "Pet",
     "rarity": "Rare",
@@ -965,7 +978,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 80,
+    "id": 81,
     "name": "Australian Kelpie",
     "category": "Pet",
     "rarity": "Rare",
@@ -977,7 +990,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 81,
+    "id": 82,
     "name": "Cow",
     "category": "Pet",
     "rarity": "Rare",
@@ -989,7 +1002,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 82,
+    "id": 83,
     "name": "Pig",
     "category": "Pet",
     "rarity": "Rare",
@@ -1001,7 +1014,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 83,
+    "id": 84,
     "name": "Swan",
     "category": "Pet",
     "rarity": "Rare",
@@ -1013,7 +1026,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 84,
+    "id": 85,
     "name": "Polar Bear",
     "category": "Pet",
     "rarity": "Rare",
@@ -1025,7 +1038,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 85,
+    "id": 86,
     "name": "Reindeer",
     "category": "Pet",
     "rarity": "Rare",
@@ -1037,7 +1050,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 86,
+    "id": 87,
     "name": "Shrew",
     "category": "Pet",
     "rarity": "Rare",
@@ -1049,7 +1062,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 87,
+    "id": 88,
     "name": "Rat",
     "category": "Pet",
     "rarity": "Rare",
@@ -1061,7 +1074,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 88,
+    "id": 89,
     "name": "Emu",
     "category": "Pet",
     "rarity": "Rare",
@@ -1073,7 +1086,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 89,
+    "id": 90,
     "name": "Monkey",
     "category": "Pet",
     "rarity": "Rare",
@@ -1085,7 +1098,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 90,
+    "id": 91,
     "name": "Rhino",
     "category": "Pet",
     "rarity": "Rare",
@@ -1097,7 +1110,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 91,
+    "id": 92,
     "name": "Woolly Mammoth",
     "category": "Pet",
     "rarity": "Rare",
@@ -1109,7 +1122,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 92,
+    "id": 93,
     "name": "Dilophosaurus",
     "category": "Pet",
     "rarity": "Rare",
@@ -1121,7 +1134,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 93,
+    "id": 94,
     "name": "Pterodactyl",
     "category": "Pet",
     "rarity": "Rare",
@@ -1133,7 +1146,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 94,
+    "id": 95,
     "name": "Musk Ox",
     "category": "Pet",
     "rarity": "Rare",
@@ -1145,7 +1158,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 95,
+    "id": 96,
     "name": "Lynx",
     "category": "Pet",
     "rarity": "Rare",
@@ -1157,7 +1170,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 96,
+    "id": 97,
     "name": "Ox",
     "category": "Pet",
     "rarity": "Rare",
@@ -1169,7 +1182,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 97,
+    "id": 98,
     "name": "Narwhal",
     "category": "Pet",
     "rarity": "Rare",
@@ -1181,7 +1194,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 98,
+    "id": 99,
     "name": "Seahorse",
     "category": "Pet",
     "rarity": "Rare",
@@ -1193,7 +1206,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 99,
+    "id": 100,
     "name": "Merhorse",
     "category": "Pet",
     "rarity": "Rare",
@@ -1205,7 +1218,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 100,
+    "id": 101,
     "name": "Sasquatch",
     "category": "Pet",
     "rarity": "Rare",
@@ -1217,7 +1230,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 101,
+    "id": 102,
     "name": "Husky",
     "category": "Pet",
     "rarity": "Rare",
@@ -1229,7 +1242,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 102,
+    "id": 103,
     "name": "Abyssinian Cat",
     "category": "Pet",
     "rarity": "Rare",
@@ -1241,7 +1254,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 103,
+    "id": 104,
     "name": "Red Fox",
     "category": "Pet",
     "rarity": "Rare",
@@ -1253,7 +1266,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 104,
+    "id": 105,
     "name": "Woodpecker",
     "category": "Pet",
     "rarity": "Rare",
@@ -1265,7 +1278,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 105,
+    "id": 106,
     "name": "Ibex",
     "category": "Pet",
     "rarity": "Rare",
@@ -1277,7 +1290,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 106,
+    "id": 107,
     "name": "Orangutan",
     "category": "Pet",
     "rarity": "Rare",
@@ -1289,7 +1302,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 107,
+    "id": 108,
     "name": "Parakeet",
     "category": "Pet",
     "rarity": "Rare",
@@ -1301,7 +1314,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 108,
+    "id": 109,
     "name": "Zebra",
     "category": "Pet",
     "rarity": "Rare",
@@ -1313,7 +1326,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 109,
+    "id": 110,
     "name": "Yellow Butterfly",
     "category": "Pet",
     "rarity": "Rare",
@@ -1325,7 +1338,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 110,
+    "id": 111,
     "name": "Koi Carp",
     "category": "Pet",
     "rarity": "Rare",
@@ -1337,7 +1350,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 111,
+    "id": 112,
     "name": "Leopard Cat",
     "category": "Pet",
     "rarity": "Rare",
@@ -1349,7 +1362,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 112,
+    "id": 113,
     "name": "Bloodhound",
     "category": "Pet",
     "rarity": "Rare",
@@ -1361,7 +1374,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 113,
+    "id": 114,
     "name": "Moon Rabbit",
     "category": "Pet",
     "rarity": "Rare",
@@ -1373,7 +1386,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 114,
+    "id": 115,
     "name": "Feesh",
     "category": "Pet",
     "rarity": "Rare",
@@ -1385,7 +1398,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 115,
+    "id": 116,
     "name": "Ocelot",
     "category": "Pet",
     "rarity": "Rare",
@@ -1397,7 +1410,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 116,
+    "id": 117,
     "name": "Gecko",
     "category": "Pet",
     "rarity": "Rare",
@@ -1409,7 +1422,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 117,
+    "id": 118,
     "name": "Tarsier",
     "category": "Pet",
     "rarity": "Rare",
@@ -1421,7 +1434,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 118,
+    "id": 119,
     "name": "Goldfish",
     "category": "Pet",
     "rarity": "Rare",
@@ -1433,7 +1446,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 119,
+    "id": 120,
     "name": "Gorilla",
     "category": "Pet",
     "rarity": "Rare",
@@ -1445,7 +1458,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 120,
+    "id": 121,
     "name": "Hare",
     "category": "Pet",
     "rarity": "Rare",
@@ -1457,7 +1470,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 121,
+    "id": 122,
     "name": "Border Collie",
     "category": "Pet",
     "rarity": "Rare",
@@ -1469,7 +1482,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 122,
+    "id": 123,
     "name": "Goose",
     "category": "Pet",
     "rarity": "Rare",
@@ -1481,7 +1494,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 123,
+    "id": 124,
     "name": "Pudding Cat",
     "category": "Pet",
     "rarity": "Rare",
@@ -1493,7 +1506,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 124,
+    "id": 125,
     "name": "Hippo",
     "category": "Pet",
     "rarity": "Rare",
@@ -1505,7 +1518,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 125,
+    "id": 126,
     "name": "Leopard Shark",
     "category": "Pet",
     "rarity": "Rare",
@@ -1517,7 +1530,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 126,
+    "id": 127,
     "name": "Toy Poodle",
     "category": "Pet",
     "rarity": "Rare",
@@ -1529,7 +1542,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 127,
+    "id": 128,
     "name": "Indian Leopard",
     "category": "Pet",
     "rarity": "Rare",
@@ -1541,7 +1554,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 128,
+    "id": 129,
     "name": "Oryx",
     "category": "Pet",
     "rarity": "Rare",
@@ -1553,7 +1566,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 129,
+    "id": 130,
     "name": "Cherub Chipmunk",
     "category": "Pet",
     "rarity": "Rare",
@@ -1565,7 +1578,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 130,
+    "id": 131,
     "name": "Bison",
     "category": "Pet",
     "rarity": "Rare",
@@ -1577,7 +1590,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 131,
+    "id": 132,
     "name": "Nurse Shark",
     "category": "Pet",
     "rarity": "Rare",
@@ -1589,7 +1602,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 132,
+    "id": 133,
     "name": "Pilot Gull",
     "category": "Pet",
     "rarity": "Rare",
@@ -1601,7 +1614,235 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 133,
+    "id": 134,
+    "name": "Christmas Pudding Pup",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 135,
+    "name": "Flaming Zebra",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 136,
+    "name": "Ash Zebra",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 137,
+    "name": "Magma Snail",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 138,
+    "name": "Magma Moose",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 139,
+    "name": "Toasty Red Panda",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 140,
+    "name": "Burning Bunny",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 141,
+    "name": "Flaming Fox",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 142,
+    "name": "Wildfire Hawk",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 143,
+    "name": "Volcanic Rhino",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 144,
+    "name": "Winter Fawn",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 145,
+    "name": "Winter Doe",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 146,
+    "name": "Winter Buck",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 147,
+    "name": "Frozen Penguin",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 148,
+    "name": "Icy Porcupine",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 149,
+    "name": "Snowy Mammoth",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 150,
+    "name": "Shiver Wolf",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 151,
+    "name": "Subzero Scorpion",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 152,
+    "name": "Frostbite Bear",
+    "category": "Pet",
+    "rarity": "Rare",
+    "value": 2.5,
+    "demand": 2,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 153,
     "name": "Flamingo",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1613,7 +1854,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 134,
+    "id": 154,
     "name": "Horse",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1625,7 +1866,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 135,
+    "id": 155,
     "name": "Lion",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1637,7 +1878,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 136,
+    "id": 156,
     "name": "Red Panda",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1649,7 +1890,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 137,
+    "id": 157,
     "name": "Koala",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1661,7 +1902,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 138,
+    "id": 158,
     "name": "Dalmatian",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1673,7 +1914,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 139,
+    "id": 159,
     "name": "Hedgehog",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1685,7 +1926,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 140,
+    "id": 160,
     "name": "Toucan",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1697,7 +1938,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 141,
+    "id": 161,
     "name": "Sloth",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1709,7 +1950,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 142,
+    "id": 162,
     "name": "Sabertooth",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1721,7 +1962,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 143,
+    "id": 163,
     "name": "Shiba Inu",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1733,7 +1974,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 144,
+    "id": 164,
     "name": "Panda",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1745,7 +1986,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 145,
+    "id": 165,
     "name": "Penguin",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1757,7 +1998,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 146,
+    "id": 166,
     "name": "Platypus",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1769,7 +2010,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 147,
+    "id": 167,
     "name": "Turkey",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1781,7 +2022,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 148,
+    "id": 168,
     "name": "Yeti",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1793,7 +2034,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 149,
+    "id": 169,
     "name": "Zombie Buffalo",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1805,7 +2046,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 150,
+    "id": 170,
     "name": "Llama",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1817,7 +2058,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 151,
+    "id": 171,
     "name": "Ladybug",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1829,7 +2070,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 152,
+    "id": 172,
     "name": "Frog",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1841,7 +2082,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 153,
+    "id": 173,
     "name": "Ginger Cat",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1853,7 +2094,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 154,
+    "id": 174,
     "name": "Crocodile",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1865,7 +2106,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 155,
+    "id": 175,
     "name": "Albino Bat",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1877,7 +2118,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 156,
+    "id": 176,
     "name": "Arctic Fox",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1889,7 +2130,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 157,
+    "id": 177,
     "name": "Bee",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1901,7 +2142,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 158,
+    "id": 178,
     "name": "Business Monkey",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1913,7 +2154,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 159,
+    "id": 179,
     "name": "Deinonychus",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1925,7 +2166,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 160,
+    "id": 180,
     "name": "Ghost Bunny",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1937,7 +2178,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 161,
+    "id": 181,
     "name": "Starfish",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1949,7 +2190,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 162,
+    "id": 182,
     "name": "Toy Monkey",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1961,7 +2202,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 163,
+    "id": 183,
     "name": "Lunar Ox",
     "category": "Pet",
     "rarity": "Ultra-Rare",
@@ -1973,7 +2214,127 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 164,
+    "id": 184,
+    "name": "Corgi",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 185,
+    "name": "Robot",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 186,
+    "name": "Swordfish",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 187,
+    "name": "Dire Wolf",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 188,
+    "name": "Pangolin",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 189,
+    "name": "African Wild Dog",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 190,
+    "name": "Winged Horse",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 191,
+    "name": "Royal Palace Spaniel",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 192,
+    "name": "Nautilus",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 193,
+    "name": "Cuddly Candle",
+    "category": "Pet",
+    "rarity": "Ultra-Rare",
+    "value": 14,
+    "demand": 3,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 194,
     "name": "Shadow Dragon",
     "category": "Pet",
     "rarity": "Legendary",
@@ -1985,7 +2346,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 165,
+    "id": 195,
     "name": "Bat Dragon",
     "category": "Pet",
     "rarity": "Legendary",
@@ -1997,7 +2358,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 166,
+    "id": 196,
     "name": "Frost Dragon",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2009,7 +2370,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 167,
+    "id": 197,
     "name": "Frost Fury",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2021,7 +2382,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 168,
+    "id": 198,
     "name": "Giraffe",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2033,7 +2394,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 169,
+    "id": 199,
     "name": "Owl",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2045,7 +2406,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 170,
+    "id": 200,
     "name": "Kitsune",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2057,7 +2418,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 171,
+    "id": 201,
     "name": "Cerberus",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2069,7 +2430,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 172,
+    "id": 202,
     "name": "Parrot",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2081,7 +2442,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 173,
+    "id": 203,
     "name": "Crow",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2093,7 +2454,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 174,
+    "id": 204,
     "name": "Evil Unicorn",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2105,7 +2466,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 175,
+    "id": 205,
     "name": "Diamond Dragon",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2117,7 +2478,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 176,
+    "id": 206,
     "name": "Diamond Griffin",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2129,7 +2490,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 177,
+    "id": 207,
     "name": "Diamond Unicorn",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2141,7 +2502,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 178,
+    "id": 208,
     "name": "Diamond Ladybug",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2153,7 +2514,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 179,
+    "id": 209,
     "name": "Albino Monkey",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2165,7 +2526,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 180,
+    "id": 210,
     "name": "Monkey King",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2177,7 +2538,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 181,
+    "id": 211,
     "name": "Ninja Monkey",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2189,7 +2550,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 182,
+    "id": 212,
     "name": "Queen Bee",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2201,7 +2562,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 183,
+    "id": 213,
     "name": "King Bee",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2213,7 +2574,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 184,
+    "id": 214,
     "name": "Griffin",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2225,7 +2586,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 185,
+    "id": 215,
     "name": "Kangaroo",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2237,7 +2598,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 186,
+    "id": 216,
     "name": "T-Rex",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2249,7 +2610,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 187,
+    "id": 217,
     "name": "Golden Unicorn",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2261,7 +2622,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 188,
+    "id": 218,
     "name": "Golden Griffin",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2273,7 +2634,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 189,
+    "id": 219,
     "name": "Golden Dragon",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2285,7 +2646,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 190,
+    "id": 220,
     "name": "Golden Ladybug",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2297,7 +2658,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 191,
+    "id": 221,
     "name": "Golden Penguin",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2309,7 +2670,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 192,
+    "id": 222,
     "name": "Golden Rat",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2321,7 +2682,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 193,
+    "id": 223,
     "name": "Guardian Lion",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2333,7 +2694,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 194,
+    "id": 224,
     "name": "Metal Ox",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2345,7 +2706,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 195,
+    "id": 225,
     "name": "Skele-Rex",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2357,7 +2718,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 196,
+    "id": 226,
     "name": "Snow Owl",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2369,7 +2730,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 197,
+    "id": 227,
     "name": "Turtle",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2381,7 +2742,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 198,
+    "id": 228,
     "name": "Robo Dog",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2393,7 +2754,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 199,
+    "id": 229,
     "name": "Arctic Reindeer",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2405,7 +2766,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 200,
+    "id": 230,
     "name": "Hot Doggo",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2417,7 +2778,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 201,
+    "id": 231,
     "name": "Dodo",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2429,7 +2790,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 202,
+    "id": 232,
     "name": "Dragon",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2441,7 +2802,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 203,
+    "id": 233,
     "name": "Unicorn",
     "category": "Pet",
     "rarity": "Legendary",
@@ -2453,7 +2814,103 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 204,
+    "id": 234,
+    "name": "Blazing Lion",
+    "category": "Pet",
+    "rarity": "Legendary",
+    "value": 1400,
+    "demand": 4,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 235,
+    "name": "Haetae",
+    "category": "Pet",
+    "rarity": "Legendary",
+    "value": 90,
+    "demand": 4,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 236,
+    "name": "Balloon Unicorn",
+    "category": "Pet",
+    "rarity": "Legendary",
+    "value": 70,
+    "demand": 4,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 237,
+    "name": "Ancient Dragon",
+    "category": "Pet",
+    "rarity": "Legendary",
+    "value": 80,
+    "demand": 4,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 238,
+    "name": "Alicorn",
+    "category": "Pet",
+    "rarity": "Legendary",
+    "value": 75,
+    "demand": 4,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 239,
+    "name": "Dragonfly",
+    "category": "Pet",
+    "rarity": "Legendary",
+    "value": 70,
+    "demand": 4,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 240,
+    "name": "Orchid Butterfly",
+    "category": "Pet",
+    "rarity": "Legendary",
+    "value": 65,
+    "demand": 4,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 241,
+    "name": "2D Kitty",
+    "category": "Pet",
+    "rarity": "Legendary",
+    "value": 90,
+    "demand": 4,
+    "emoji": "🐾",
+    "variant": true,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 242,
     "name": "Bike",
     "category": "Vehicle",
     "rarity": null,
@@ -2465,7 +2922,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 205,
+    "id": 243,
     "name": "Motorcycle",
     "category": "Vehicle",
     "rarity": null,
@@ -2477,7 +2934,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 206,
+    "id": 244,
     "name": "Car",
     "category": "Vehicle",
     "rarity": null,
@@ -2489,7 +2946,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 207,
+    "id": 245,
     "name": "Offroader",
     "category": "Vehicle",
     "rarity": null,
@@ -2501,7 +2958,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 208,
+    "id": 246,
     "name": "Convertible",
     "category": "Vehicle",
     "rarity": null,
@@ -2513,7 +2970,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 209,
+    "id": 247,
     "name": "GoKart",
     "category": "Vehicle",
     "rarity": null,
@@ -2525,7 +2982,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 210,
+    "id": 248,
     "name": "Family Car",
     "category": "Vehicle",
     "rarity": null,
@@ -2537,7 +2994,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 211,
+    "id": 249,
     "name": "Classic Helicopter",
     "category": "Vehicle",
     "rarity": null,
@@ -2549,7 +3006,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 212,
+    "id": 250,
     "name": "Classic Airplane",
     "category": "Vehicle",
     "rarity": null,
@@ -2561,7 +3018,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 213,
+    "id": 251,
     "name": "Classic Boat",
     "category": "Vehicle",
     "rarity": null,
@@ -2573,7 +3030,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 214,
+    "id": 252,
     "name": "Banana Car",
     "category": "Vehicle",
     "rarity": null,
@@ -2585,7 +3042,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 215,
+    "id": 253,
     "name": "Ice Cream Truck",
     "category": "Vehicle",
     "rarity": null,
@@ -2597,7 +3054,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 216,
+    "id": 254,
     "name": "Tractor",
     "category": "Vehicle",
     "rarity": null,
@@ -2609,7 +3066,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 217,
+    "id": 255,
     "name": "Harvest Truck",
     "category": "Vehicle",
     "rarity": null,
@@ -2621,7 +3078,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 218,
+    "id": 256,
     "name": "Snow Plow",
     "category": "Vehicle",
     "rarity": null,
@@ -2633,7 +3090,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 219,
+    "id": 257,
     "name": "Tundra Exploration Machine",
     "category": "Vehicle",
     "rarity": null,
@@ -2645,7 +3102,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 220,
+    "id": 258,
     "name": "Old Sailboat",
     "category": "Vehicle",
     "rarity": null,
@@ -2657,7 +3114,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 221,
+    "id": 259,
     "name": "Landsailer",
     "category": "Vehicle",
     "rarity": null,
@@ -2669,7 +3126,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 222,
+    "id": 260,
     "name": "Trireme",
     "category": "Vehicle",
     "rarity": null,
@@ -2681,7 +3138,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 223,
+    "id": 261,
     "name": "Witch's Caravan",
     "category": "Vehicle",
     "rarity": null,
@@ -2693,7 +3150,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 224,
+    "id": 262,
     "name": "Hovercraft",
     "category": "Vehicle",
     "rarity": null,
@@ -2705,7 +3162,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 225,
+    "id": 263,
     "name": "Planetary Core Car",
     "category": "Vehicle",
     "rarity": null,
@@ -2717,7 +3174,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 226,
+    "id": 264,
     "name": "Orchid Racer",
     "category": "Vehicle",
     "rarity": null,
@@ -2729,7 +3186,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 227,
+    "id": 265,
     "name": "RGB Monster Truck",
     "category": "Vehicle",
     "rarity": null,
@@ -2741,7 +3198,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 228,
+    "id": 266,
     "name": "RGB UFO",
     "category": "Vehicle",
     "rarity": null,
@@ -2753,7 +3210,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 229,
+    "id": 267,
     "name": "Rocket Sled",
     "category": "Vehicle",
     "rarity": null,
@@ -2765,7 +3222,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 230,
+    "id": 268,
     "name": "Bathtub",
     "category": "Vehicle",
     "rarity": null,
@@ -2777,7 +3234,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 231,
+    "id": 269,
     "name": "Dogmobile",
     "category": "Vehicle",
     "rarity": null,
@@ -2789,7 +3246,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 232,
+    "id": 270,
     "name": "Santa's Sleigh",
     "category": "Vehicle",
     "rarity": null,
@@ -2801,7 +3258,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 233,
+    "id": 271,
     "name": "Pumpkin Carriage",
     "category": "Vehicle",
     "rarity": null,
@@ -2813,7 +3270,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 234,
+    "id": 272,
     "name": "Limo",
     "category": "Vehicle",
     "rarity": null,
@@ -2825,7 +3282,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 235,
+    "id": 273,
     "name": "Luxury Car",
     "category": "Vehicle",
     "rarity": null,
@@ -2837,7 +3294,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 236,
+    "id": 274,
     "name": "Bouncy Ball",
     "category": "Toy",
     "rarity": null,
@@ -2849,7 +3306,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 237,
+    "id": 275,
     "name": "Frisbee",
     "category": "Toy",
     "rarity": null,
@@ -2861,7 +3318,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 238,
+    "id": 276,
     "name": "Kite",
     "category": "Toy",
     "rarity": null,
@@ -2873,7 +3330,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 239,
+    "id": 277,
     "name": "Pogo Stick",
     "category": "Toy",
     "rarity": null,
@@ -2885,7 +3342,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 240,
+    "id": 278,
     "name": "Balloon",
     "category": "Toy",
     "rarity": null,
@@ -2897,7 +3354,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 241,
+    "id": 279,
     "name": "Grappling Hook",
     "category": "Toy",
     "rarity": null,
@@ -2909,7 +3366,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 242,
+    "id": 280,
     "name": "Propeller Hat",
     "category": "Toy",
     "rarity": null,
@@ -2921,7 +3378,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 243,
+    "id": 281,
     "name": "Skateboard",
     "category": "Toy",
     "rarity": null,
@@ -2933,7 +3390,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 244,
+    "id": 282,
     "name": "Yo-Yo",
     "category": "Toy",
     "rarity": null,
@@ -2945,7 +3402,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 245,
+    "id": 283,
     "name": "Rattle",
     "category": "Toy",
     "rarity": null,
@@ -2957,7 +3414,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 246,
+    "id": 284,
     "name": "Cloud Rattle",
     "category": "Toy",
     "rarity": null,
@@ -2969,7 +3426,427 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 247,
+    "id": 285,
+    "name": "Wrench Chew Toy",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.04,
+    "demand": 1,
+    "emoji": "🔧",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 286,
+    "name": "Fish on a Stick Chew Toy",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.04,
+    "demand": 1,
+    "emoji": "🐟",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 287,
+    "name": "Vine Leash",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.04,
+    "demand": 1,
+    "emoji": "🌿",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 288,
+    "name": "Googly Eye Conker Plush",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.04,
+    "demand": 1,
+    "emoji": "🌰",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 289,
+    "name": "Ice Cream Sandwich Rattle",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.04,
+    "demand": 1,
+    "emoji": "🍦",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 290,
+    "name": "Boba Tea Chew Toy",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.3,
+    "demand": 1,
+    "emoji": "🧋",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 291,
+    "name": "Giggle Puff Balloon",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.3,
+    "demand": 1,
+    "emoji": "🎈",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 292,
+    "name": "Golden Scale Pogo Stick",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.35,
+    "demand": 1,
+    "emoji": "🪀",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 293,
+    "name": "Eggy Plush",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.3,
+    "demand": 1,
+    "emoji": "🥚",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 294,
+    "name": "Flatfish Throwing Disc",
+    "category": "Toy",
+    "rarity": null,
+    "value": 0.3,
+    "demand": 1,
+    "emoji": "🥏",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 295,
+    "name": "Jellybean Grappling Hook",
+    "category": "Toy",
+    "rarity": null,
+    "value": 1,
+    "demand": 2,
+    "emoji": "🪝",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 296,
+    "name": "Dandelion Plush",
+    "category": "Toy",
+    "rarity": null,
+    "value": 1,
+    "demand": 2,
+    "emoji": "🌼",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 297,
+    "name": "Jelly Propeller",
+    "category": "Toy",
+    "rarity": null,
+    "value": 1,
+    "demand": 2,
+    "emoji": "🪂",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 298,
+    "name": "Orbital Roller Skates",
+    "category": "Toy",
+    "rarity": null,
+    "value": 1,
+    "demand": 2,
+    "emoji": "🛼",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 299,
+    "name": "Cookie Sabre",
+    "category": "Toy",
+    "rarity": null,
+    "value": 1,
+    "demand": 2,
+    "emoji": "🍪",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 300,
+    "name": "Small Gift",
+    "category": "Gift",
+    "rarity": "Common",
+    "value": 0.06,
+    "demand": 1,
+    "emoji": "🎁",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 301,
+    "name": "Big Gift",
+    "category": "Gift",
+    "rarity": "Rare",
+    "value": 0.4,
+    "demand": 2,
+    "emoji": "🎁",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 302,
+    "name": "Massive Gift",
+    "category": "Gift",
+    "rarity": "Legendary",
+    "value": 1.2,
+    "demand": 3,
+    "emoji": "🎁",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 303,
+    "name": "Standard Chest",
+    "category": "Gift",
+    "rarity": null,
+    "value": 0.6,
+    "demand": 2,
+    "emoji": "🧰",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 304,
+    "name": "Regal Chest",
+    "category": "Gift",
+    "rarity": null,
+    "value": 1.8,
+    "demand": 2,
+    "emoji": "👑",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 305,
+    "name": "Accessory Chest",
+    "category": "Gift",
+    "rarity": null,
+    "value": 1.0,
+    "demand": 2,
+    "emoji": "🎀",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 306,
+    "name": "Wing Chest",
+    "category": "Gift",
+    "rarity": null,
+    "value": 1.4,
+    "demand": 2,
+    "emoji": "🪽",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 307,
+    "name": "1000 Bucks Silk Bag",
+    "category": "Gift",
+    "rarity": null,
+    "value": 1.0,
+    "demand": 1,
+    "emoji": "💰",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 308,
+    "name": "Cat Backpack",
+    "category": "Pet Wear",
+    "rarity": "Ultra-Rare",
+    "value": 1.0,
+    "demand": 2,
+    "emoji": "🎒",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 309,
+    "name": "Stylish Messenger Bag",
+    "category": "Pet Wear",
+    "rarity": "Ultra-Rare",
+    "value": 1.0,
+    "demand": 2,
+    "emoji": "👜",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 310,
+    "name": "Theatrical Hat",
+    "category": "Pet Wear",
+    "rarity": "Ultra-Rare",
+    "value": 1.0,
+    "demand": 2,
+    "emoji": "🎭",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 311,
+    "name": "Y2K Shades",
+    "category": "Pet Wear",
+    "rarity": "Ultra-Rare",
+    "value": 1.0,
+    "demand": 2,
+    "emoji": "😎",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 312,
+    "name": "Moth Hair Clip",
+    "category": "Pet Wear",
+    "rarity": "Ultra-Rare",
+    "value": 1.0,
+    "demand": 2,
+    "emoji": "🦋",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 313,
+    "name": "Oni Samurai Hat",
+    "category": "Pet Wear",
+    "rarity": "Ultra-Rare",
+    "value": 1.0,
+    "demand": 2,
+    "emoji": "👹",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 314,
+    "name": "Red Panda Bag",
+    "category": "Pet Wear",
+    "rarity": "Ultra-Rare",
+    "value": 1.0,
+    "demand": 2,
+    "emoji": "🐼",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 315,
+    "name": "Science Hat",
+    "category": "Pet Wear",
+    "rarity": "Legendary",
+    "value": 4,
+    "demand": 3,
+    "emoji": "🧪",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 316,
+    "name": "Thinking Hat",
+    "category": "Pet Wear",
+    "rarity": "Legendary",
+    "value": 4,
+    "demand": 3,
+    "emoji": "➗",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 317,
+    "name": "City Hat",
+    "category": "Pet Wear",
+    "rarity": "Legendary",
+    "value": 4,
+    "demand": 3,
+    "emoji": "🌆",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 318,
+    "name": "Grinder Hat",
+    "category": "Pet Wear",
+    "rarity": "Legendary",
+    "value": 4,
+    "demand": 3,
+    "emoji": "⚙️",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 319,
+    "name": "Unicorn Backpack",
+    "category": "Pet Wear",
+    "rarity": "Legendary",
+    "value": 6,
+    "demand": 3,
+    "emoji": "🦄",
+    "variant": false,
+    "obtainable": true,
+    "notes": ""
+  },
+  {
+    "id": 320,
     "name": "Apple",
     "category": "Food",
     "rarity": null,
@@ -2981,7 +3858,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 248,
+    "id": 321,
     "name": "Cake Slice",
     "category": "Food",
     "rarity": null,
@@ -2993,7 +3870,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 249,
+    "id": 322,
     "name": "Pizza Slice",
     "category": "Food",
     "rarity": null,
@@ -3005,7 +3882,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 250,
+    "id": 323,
     "name": "Ice Cream Cone",
     "category": "Food",
     "rarity": null,
@@ -3017,7 +3894,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 251,
+    "id": 324,
     "name": "Birthday Cake",
     "category": "Food",
     "rarity": null,
@@ -3029,7 +3906,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 252,
+    "id": 325,
     "name": "Donut",
     "category": "Food",
     "rarity": null,
@@ -3041,7 +3918,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 253,
+    "id": 326,
     "name": "Taco",
     "category": "Food",
     "rarity": null,
@@ -3053,7 +3930,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 254,
+    "id": 327,
     "name": "Sushi Platter",
     "category": "Food",
     "rarity": null,
@@ -3065,7 +3942,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 255,
+    "id": 328,
     "name": "Hot Dog",
     "category": "Food",
     "rarity": null,
@@ -3077,7 +3954,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 256,
+    "id": 329,
     "name": "Cookie",
     "category": "Food",
     "rarity": null,
@@ -3089,7 +3966,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 257,
+    "id": 330,
     "name": "Watermelon Slice",
     "category": "Food",
     "rarity": null,
@@ -3101,7 +3978,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 258,
+    "id": 331,
     "name": "Gingerbread Cookie",
     "category": "Food",
     "rarity": null,
@@ -3113,7 +3990,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 259,
+    "id": 332,
     "name": "Classic Stroller",
     "category": "Stroller",
     "rarity": null,
@@ -3125,7 +4002,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 260,
+    "id": 333,
     "name": "Twin Stroller",
     "category": "Stroller",
     "rarity": null,
@@ -3137,7 +4014,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 261,
+    "id": 334,
     "name": "Pet Carriage Stroller",
     "category": "Stroller",
     "rarity": null,
@@ -3149,7 +4026,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 262,
+    "id": 335,
     "name": "Royal Stroller",
     "category": "Stroller",
     "rarity": null,
@@ -3161,7 +4038,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 263,
+    "id": 336,
     "name": "Sports Stroller",
     "category": "Stroller",
     "rarity": null,
@@ -3173,7 +4050,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 264,
+    "id": 337,
     "name": "Vintage Stroller",
     "category": "Stroller",
     "rarity": null,
@@ -3185,7 +4062,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 265,
+    "id": 338,
     "name": "Cracked Egg",
     "category": "Egg",
     "rarity": null,
@@ -3197,7 +4074,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 266,
+    "id": 339,
     "name": "Pet Egg",
     "category": "Egg",
     "rarity": null,
@@ -3209,7 +4086,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 267,
+    "id": 340,
     "name": "Royal Egg",
     "category": "Egg",
     "rarity": null,
@@ -3221,7 +4098,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 268,
+    "id": 341,
     "name": "Farm Egg",
     "category": "Egg",
     "rarity": null,
@@ -3233,7 +4110,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 269,
+    "id": 342,
     "name": "Aussie Egg",
     "category": "Egg",
     "rarity": null,
@@ -3245,7 +4122,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 270,
+    "id": 343,
     "name": "Safari Egg",
     "category": "Egg",
     "rarity": null,
@@ -3257,7 +4134,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 271,
+    "id": 344,
     "name": "Jungle Egg",
     "category": "Egg",
     "rarity": null,
@@ -3269,7 +4146,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 272,
+    "id": 345,
     "name": "Fossil Egg",
     "category": "Egg",
     "rarity": null,
@@ -3281,7 +4158,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 273,
+    "id": 346,
     "name": "Ocean Egg",
     "category": "Egg",
     "rarity": null,
@@ -3293,7 +4170,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 274,
+    "id": 347,
     "name": "Mythic Egg",
     "category": "Egg",
     "rarity": null,
@@ -3305,7 +4182,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 275,
+    "id": 348,
     "name": "Woodland Egg",
     "category": "Egg",
     "rarity": null,
@@ -3317,7 +4194,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 276,
+    "id": 349,
     "name": "Japan Egg",
     "category": "Egg",
     "rarity": null,
@@ -3329,7 +4206,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 277,
+    "id": 350,
     "name": "Southeast Asia Egg",
     "category": "Egg",
     "rarity": null,
@@ -3341,7 +4218,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 278,
+    "id": 351,
     "name": "Danger Egg",
     "category": "Egg",
     "rarity": null,
@@ -3353,7 +4230,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 279,
+    "id": 352,
     "name": "Urban Egg",
     "category": "Egg",
     "rarity": null,
@@ -3365,7 +4242,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 280,
+    "id": 353,
     "name": "Desert Egg",
     "category": "Egg",
     "rarity": null,
@@ -3377,7 +4254,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 281,
+    "id": 354,
     "name": "Royal Desert Egg",
     "category": "Egg",
     "rarity": null,
@@ -3389,7 +4266,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 282,
+    "id": 355,
     "name": "Garden Egg",
     "category": "Egg",
     "rarity": null,
@@ -3401,7 +4278,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 283,
+    "id": 356,
     "name": "Moon Egg",
     "category": "Egg",
     "rarity": null,
@@ -3413,7 +4290,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 284,
+    "id": 357,
     "name": "Royal Moon Egg",
     "category": "Egg",
     "rarity": null,
@@ -3425,7 +4302,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 285,
+    "id": 358,
     "name": "Aztec Egg",
     "category": "Egg",
     "rarity": null,
@@ -3437,7 +4314,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 286,
+    "id": 359,
     "name": "Royal Aztec Egg",
     "category": "Egg",
     "rarity": null,
@@ -3449,7 +4326,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 287,
+    "id": 360,
     "name": "Endangered Egg",
     "category": "Egg",
     "rarity": null,
@@ -3461,7 +4338,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 288,
+    "id": 361,
     "name": "Fool Egg",
     "category": "Egg",
     "rarity": null,
@@ -3473,7 +4350,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 289,
+    "id": 362,
     "name": "Golden Egg",
     "category": "Egg",
     "rarity": null,
@@ -3485,7 +4362,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 290,
+    "id": 363,
     "name": "Diamond Egg",
     "category": "Egg",
     "rarity": null,
@@ -3497,7 +4374,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 291,
+    "id": 364,
     "name": "Wrapped Doll",
     "category": "Egg",
     "rarity": null,
@@ -3509,7 +4386,7 @@ const ITEMS = [
     "notes": ""
   },
   {
-    "id": 292,
+    "id": 365,
     "name": "Christmas Future Egg",
     "category": "Egg",
     "rarity": null,
