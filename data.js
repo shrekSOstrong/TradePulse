@@ -1,13 +1,16 @@
-// TradePulse item database (v4 -- full pet roster)
+// TradePulse item database (v5 -- full pet roster + full egg roster)
 // Pet names, rarities, and values are sourced directly from
 // AdoptMeTradingValues.com community value list (733 unique pets,
-// last synced June 2026), the same site many real Adopt Me traders
-// use day to day. Values are in Ride Potions (RP), the standard
-// community unit -- NOT Bucks or Robux.
+// last synced June 2026). Values are in Ride Potions (RP), the
+// standard community trading unit -- NOT Bucks or Robux.
 //
-// Eggs, vehicles, toys, pet wear, food, gifts, and strollers are a
-// curated set of verified real item names with starting placeholder
-// values for non-pet categories (pets carry real community values).
+// Eggs cover the FULL historical roster of every egg ever released
+// in Adopt Me (38 total, Blue Egg/Pink Egg 2019 through Crystal Egg
+// 2026), cross-checked against the Adopt Me! Wiki and an egg-history
+// blog post -- including retired eggs (obtainable: false).
+//
+// Vehicles, toys, pet wear, food, gifts, and strollers are a curated
+// set of verified real item names with starting placeholder values.
 //
 // Pet values are BASE values (Normal, no potions). The Neon / Mega
 // Neon / Fly / Ride toggles in the app compute the variant value live.
@@ -9495,6 +9498,61 @@ const ITEMS = [
     "value": 1.0,
     "demand": 1,
     "emoji": "👶",
+    "variant": false,
+    "obtainable": true
+  },
+  {
+    "id": 863,
+    "name": "Starter Egg",
+    "category": "Egg",
+    "rarity": null,
+    "value": 0.01,
+    "demand": 1,
+    "emoji": "🥚",
+    "variant": false,
+    "obtainable": true
+  },
+  {
+    "id": 864,
+    "name": "Safari Egg",
+    "category": "Egg",
+    "rarity": null,
+    "value": 0.5,
+    "demand": 2,
+    "emoji": "🥚",
+    "variant": false,
+    "obtainable": false
+  },
+  {
+    "id": 865,
+    "name": "Jungle Egg",
+    "category": "Egg",
+    "rarity": null,
+    "value": 0.5,
+    "demand": 2,
+    "emoji": "🥚",
+    "variant": false,
+    "obtainable": false
+  },
+  {
+    "id": 866,
+    "name": "Farm Egg",
+    "category": "Egg",
+    "rarity": null,
+    "value": 0.5,
+    "demand": 2,
+    "emoji": "🥚",
+    "variant": false,
+    "obtainable": false
+  },
+  {
+    "id": 867,
+    "name": "Basic Egg",
+    "category": "Egg",
+    "rarity": null,
+    "value": 0.2,
+    "demand": 2,
+    "emoji": "🥚",
     "variant": false,
     "obtainable": true
   }
